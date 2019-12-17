@@ -22,7 +22,7 @@ ribbon  ------- 9090
 什么是 Ribbon？
 Spring Cloud 提供了实现负载均衡的解决方案：Spring Cloud Ribbon，
 Ribbon 是 Netflix 发布的负载均衡器，
-而 Spring Cloud Ribbon 则是基于 Netflix Ribbon 实现的，
+而 Spring Cloud Ribbon 则是基于 Netflix1 Ribbon 实现的，
 是一个用于对 HTTP 请求进行控制的负载均衡客户端。
 
 feign   ------- 9010
