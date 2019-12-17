@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hystrix" />
         <module name="gateway" />
         <module name="provider" />
         <module name="feign" />
@@ -20,6 +21,7 @@
       <module name="consumer" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
       <module name="mySpringCloud" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="registrycenter" options="-parameters" />

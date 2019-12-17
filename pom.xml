@@ -15,6 +15,7 @@
         <module>gateway</module>
         <module>ribbon</module>
         <module>feign</module>
+        <module>hystrix</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
