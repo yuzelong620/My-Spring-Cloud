@@ -1,6 +1,5 @@
 package com.yzl.goods.web;
 
-import com.yzl.goods.bean.Goods;
 import com.yzl.goods.dao.FeignProviderClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,16 +9,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-import java.util.List;
-
 /**
- * Created by sunjingjia  on 2019/12/16.
+ * Created by sunjingjia  on 2019/12/17.
  */
-@RequestMapping("/feign")
+@RequestMapping("/hystrix")
 @RestController
-public class FeignController {
-    @Resource
+public class HystrixController {
+    @Autowired
     private FeignProviderClient feignProviderClient;
 
     @GetMapping("/findAll")
