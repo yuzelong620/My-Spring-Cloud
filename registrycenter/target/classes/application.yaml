@@ -1,0 +1,8 @@
+server:
+  port: 8888   #当前 Eureka Server 服务端口。
+eureka:
+  client:
+    register-with-eureka: true  #是否将当前 Eureka Server 服务作为客户端进行注册。
+    fetch-registry: false    #是否获取其他 Eureka Server 服务的数据。
+    service-url:
+      defaultZone: http://localhost:8888/eureka/  #注册中心的访问地址。
