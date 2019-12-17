@@ -19,10 +19,11 @@ API 网关可以对所有的 API 请求进行管理维护，相当于为系统�
 对于开发者而言就不需要关注具体的微服务 URL 了，直接访问 API 网关接口即可
 
 ribbon  ------- 9090
+
 什么是 Ribbon？
 Spring Cloud 提供了实现负载均衡的解决方案：Spring Cloud Ribbon，
 Ribbon 是 Netflix 发布的负载均衡器，
-而 Spring Cloud Ribbon 则是基于 Netflix1 Ribbon 实现的，
+而 Spring Cloud Ribbon 则是基于 Netflix Ribbon 实现的，
 是一个用于对 HTTP 请求进行控制的负载均衡客户端。
 
 feign   ------- 9010
