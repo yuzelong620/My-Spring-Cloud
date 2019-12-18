@@ -1,19 +1,18 @@
-package com.yzl.controller;
+package com.yzl.web;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/config")
 @RestController
-@RefreshScope//动态更新rabbitMQ
-public class HelloController {
+@RequestMapping("/zipkin")
+public class ZipkinController {
 
     @Value("${server.port}")
-    private int port;
+    private String port;
 
-    @RequestMapping(value = "/index")
+    @GetMapping("/index")
     public String index(){
         return "当前端口："+this.port;
     }

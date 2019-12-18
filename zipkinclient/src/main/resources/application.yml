@@ -1,0 +1,17 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: zipkinclient    #spring.application.name：当前服务注册在 Eureka Server 上的名称。
+  sleuth:
+    web:
+      client:
+        enabled: true   #spring.sleuth.web.client.enabled：设置是否开启 Sleuth。
+    sampler:
+      probability: 1.0      #spring.sleuth.sampler.probability：设置采样比例，默认是 0.1.
+  zipkin:
+    base-url: http://localhost:9090/  #Zipkin Server 地址。
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/

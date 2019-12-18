@@ -9,8 +9,20 @@ spring:
         git:
           uri: https://github.com/yuzelong620/My-Spring-Cloud.git
           searchPaths: config
+          username:
+          password:
       label: master
+  rabbitmq: #动态更新RabbitMQ配置
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8888/eureka/
+management: #动态更新RabbitMQ配置
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

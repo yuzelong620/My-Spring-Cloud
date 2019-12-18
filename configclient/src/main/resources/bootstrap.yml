@@ -10,3 +10,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8888/eureka/
+management:    #动态更新RabbitMQ配置
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
