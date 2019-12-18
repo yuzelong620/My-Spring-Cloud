@@ -1,0 +1,16 @@
+server:
+  port: 9040
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yuzelong620/My-Spring-Cloud.git
+          searchPaths: config
+      label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
