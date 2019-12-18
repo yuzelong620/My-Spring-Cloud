@@ -9,7 +9,9 @@
         <module name="hystrix" />
         <module name="gateway" />
         <module name="provider" />
+        <module name="nativeconfigserver" />
         <module name="feign" />
+        <module name="nativeconfigclient" />
         <module name="ribbon" />
         <module name="consumer" />
         <module name="registrycenter" />
@@ -23,6 +25,8 @@
       <module name="gateway" options="-parameters" />
       <module name="hystrix" options="-parameters" />
       <module name="mySpringCloud" options="-parameters" />
+      <module name="nativeconfigclient" options="-parameters" />
+      <module name="nativeconfigserver" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="registrycenter" options="-parameters" />
       <module name="ribbon" options="-parameters" />
